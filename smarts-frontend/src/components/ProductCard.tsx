@@ -6,7 +6,7 @@ import {
   Button,
   CardActions
 } from "@mui/material";
-import { Product } from "../types/Product";
+import type { Product } from "../types/Product";
 
 type ProductCardProps = {
   product: Product;
