@@ -9,9 +9,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Navbar />
-      <Container sx={{ mt: 4 }}>
-        {children}
-      </Container>
+      <Container sx={{ mt: 4 }}>{children}</Container>
     </>
   );
 }

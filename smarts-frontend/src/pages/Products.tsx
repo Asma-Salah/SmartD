@@ -6,7 +6,7 @@ import { products } from "../data/products";
 
 export default function Products() {
   const [selectedCategory, setSelectedCategory] = useState<
-    "All" | "Phones" | "Accessories" | "wearables"
+    "All" | "Phones" | "Accessories"
   >("All");
 
   const filteredProducts =
@@ -38,12 +38,6 @@ export default function Products() {
           onClick={() => setSelectedCategory("Accessories")}
         >
           Accessories
-        </Button>
-        <Button
-          variant={selectedCategory === "wearables" ? "contained" : "outlined"}
-          onClick={() => setSelectedCategory("wearables")}
-        >
-          Wearables
         </Button>
       </Stack>
 
